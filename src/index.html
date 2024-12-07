@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/yollo-logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Excuse Generator</title>
+  </head>
+  <body>
+    <h1>Domain Name Generator</h1>
+    <form id="domainForm">
+      <label for="pronoun">Pronouns (comma-separated):</label>
+      <input type="text" id="pronoun" placeholder="e.g., the, our" required />
+
+      <label for="adj">Adjectives (comma-separated):</label>
+      <input type="text" id="adj" placeholder="e.g., fast, slow" required />
+
+      <label for="noun">Nouns (comma-separated):</label>
+      <input
+        type="text"
+        id="noun"
+        placeholder="e.g., cat, dog"
+        required
+      />
+
+      <label for="extensions">Extensions (comma-separated):</label>
+      <input
+        type="text"
+        id="extensions"
+        placeholder="e.g., .com, .net"
+        value=".com, .net, .io"
+        required
+      />
+
+      <button type="submit">Generate Domains</button>
+    </form>
+
+    <div id="results">
+      <h2>Generated Domains:</h2>
+      <ul id="domainList"></ul>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
